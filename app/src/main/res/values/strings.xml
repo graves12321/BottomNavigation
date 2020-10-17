@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SignUp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Profile</string>
+    <string name="title_dashboard">Songs</string>
+    <string name="title_notifications">Photos</string>
+</resources>

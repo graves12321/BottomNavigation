@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+        <ImageView
+            android:background="@drawable/back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginTop="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/avatar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/logout"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_baseline_exit_to_app_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log out "
+                android:textSize="23dp"
+                android:textColor="@color/BackgroundtWhiteColor"/>
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv1"
+            android:layout_below="@id/img1"
+            android:textColor="#0F4885"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Võ Thành Luân"
+            android:textSize="33dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_below="@id/tv1"
+            android:id="@+id/tv2"
+            android:textColor="#0F4885"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17/01/2000"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:background="@drawable/bordertop"
+        android:layout_marginTop="5dp"
+        android:id="@+id/folow"
+        android:layout_below="@id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="236"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="315K"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="173"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:background="@drawable/borderbottom"
+        android:layout_below="@id/folow"
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Images"
+            android:textAlignment="center"
+            android:textSize="27dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Follower"
+            android:textAlignment="center"
+            android:textSize="27dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Following"
+            android:textAlignment="center"
+            android:textSize="27dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ln1"
+        android:layout_marginTop="-2dp"
+        android:background="#E4E7EA">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:text=" Email: luan@gmail.com"
+            android:textColor="#0F4885"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:text=" Phone: 0383422211"
+            android:textColor="#0F4885"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv5"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/ic_baseline_location_city_24"
+            android:text=" Address: Da Nang"
+            android:textColor="#0F4885"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv6"
+            android:layout_marginLeft="60dp"
+            android:drawableLeft="@drawable/ic_baseline_school_24"
+            android:text=" Education: UTE"
+            android:textColor="#0F4885"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

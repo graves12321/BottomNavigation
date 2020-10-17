@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A1120</color>
+    <color name="colorPrimaryDark">#221B27</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backColor">#232C4F</color>
+    <color name="backEdit">#FFFFFF</color>
+    <color name="signButton">#7289DA</color>
+    <color name="BackgroundtWhiteColor">#FFFFFF</color>
+
+</resources>

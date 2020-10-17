@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor">
+    <RelativeLayout
+        android:id="@+id/imgtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/discord"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="Sign Up"
+            android:textColor="@color/BackgroundtWhiteColor"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:theme="@style/EditTextHint"
+            android:textColor="#FFFFFF"
+            android:layout_marginVertical="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editText"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+
+        <EditText
+            android:theme="@style/EditTextHint"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/editText2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/editText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+        <EditText
+            android:theme="@style/EditTextHint"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/editText3"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/editText2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/login"
+        android:paddingVertical="20dp"
+        android:layout_below="@id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Sign Up"
+            android:textSize="22dp"
+            android:background="@drawable/radius2"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/optionlog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/login"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:textColor="@color/BackgroundtWhiteColor"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:id="@+id/button1"
+                android:background="@drawable/face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook" />
+            <Button
+                android:textColor="@color/BackgroundtWhiteColor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:id="@+id/button2"
+                android:background="@drawable/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/texta"
+        android:layout_below="@id/optionlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:text="Aldready have an account? Login here!"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
